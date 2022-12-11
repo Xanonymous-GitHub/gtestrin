@@ -20,9 +20,6 @@ FROM base AS FINAL
 # set arguments
 ARG GTEST_BRANCH_OR_TAG=main
 
-# move to zsh.
-CMD [ "/bin/zsh" ]
-
 # update & upgrade all installed packages
 RUN apk update && \
     apk --no-cache add build-base valgrind gtest clang lldb llvm gdb cmake make && \
@@ -30,5 +27,5 @@ RUN apk update && \
 
 WORKDIR /code
 
-# make the container stay running.
-CMD ["tail", "-f", "/dev/null"]
+# move to zsh.
+CMD [ "/bin/zsh" ]
