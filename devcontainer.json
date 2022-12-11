@@ -1,11 +1,6 @@
 {
   "name": "C++",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      "VARIANT": "3"
-    }
-  },
+  "image": "xanonymous/gtest-cpp-essential-env",
   "runArgs": [
     "--cap-add=SYS_PTRACE",
     "--security-opt",
