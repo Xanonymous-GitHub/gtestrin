@@ -12,16 +12,9 @@ ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 COPY library-scripts/*.sh library-scripts/*.env /tmp/library-scripts/
-RUN apk update && ash /tmp/library-scripts/common-alpine.sh "${INSTALL_ZSH}" "${USERNAME}" "${USER_UID}" "${USER_GID}" \
-    && rm -rf /tmp/library-scripts
-
-FROM base AS FINAL
-
-# set arguments
-ARG GTEST_BRANCH_OR_TAG=main
-
-# update & upgrade all installed packages
 RUN apk update && \
+    ash /tmp/library-scripts/common-alpine.sh "${INSTALL_ZSH}" "${USERNAME}" "${USER_UID}" "${USER_GID}" && \
+    rm -rf /tmp/library-scripts && \
     apk --no-cache add build-base valgrind gtest clang lldb llvm gdb cmake make && \
     apk upgrade
 
