@@ -28,4 +28,7 @@ RUN apk update && \
 WORKDIR /code
 
 # move to zsh.
-CMD [ "/bin/zsh" ]
+SHELL ["/bin/zsh"]
+
+# make the container stay running.
+CMD [ "tail", "-f", "/dev/null"]
