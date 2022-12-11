@@ -1,5 +1,5 @@
 {
-  "name": "C++",
+  "name": "Gtestrin++",
   "image": "xanonymous/gtest-cpp-essential-env",
   "runArgs": [
     "--cap-add=SYS_PTRACE",
