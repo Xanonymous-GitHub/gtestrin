@@ -4,9 +4,13 @@
 
 ## How to use
 
-```shell
-docker pull xanonymous/gtest-cpp-essential-env
-```
+1. Prepare a running container.
+
+    ```shell
+    docker run -d --pull always xanonymous/gtest-cpp-essential-env
+    ```
+
+2. Follow these steps to open folder inside container using vscode.
 
 ## How to build
 
