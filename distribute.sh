@@ -7,7 +7,7 @@ function gen_hash() {
 IMAGE_NAME=xanonymous/gtest-cpp-essential-env
 
 docker builder prune -f -a
-docker build --pull $IMAGE_NAME \
+docker build --pull \
   -t $IMAGE_NAME \
   -t $IMAGE_NAME:"$(gen_hash)" \
   . &&
