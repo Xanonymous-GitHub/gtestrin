@@ -22,8 +22,7 @@
 
 ## How to update configs here
 
-- Official config (alpine): https://github.com/microsoft/vscode-dev-containers/tree/main/containers/alpine
-- Official config (c++): https://github.com/microsoft/vscode-remote-try-cpp
+- Official config: https://github.com/devcontainers/images
 
 Basically we use alpine's config for `Dockerfile`s, but use c++ and alpine's for `devcontainer.json`.
 The `VARIANT` arg in `devcontainer.json` uses alpine's while others use c++'s.
