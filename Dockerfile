@@ -25,17 +25,10 @@ CMD [ "/bin/zsh" ]
 
 # update & upgrade all installed packages
 RUN apk update && \
-    apk --no-cache add build-base valgrind clang lldb llvm gdb cmake make && \
+    apk --no-cache add build-base valgrind gtest clang lldb llvm gdb cmake make && \
     apk upgrade
 
-# clone google test repo
-RUN git clone --depth=1 -b $GTEST_BRANCH_OR_TAG -q https://github.com/google/googletest.git /googletest && \
-    mkdir -p /googletest/build
-
-# build google test
-WORKDIR /googletest/build
-RUN cmake .. ${CMAKE_OPTIONS} && make && make install && \
-    mkdir -p /code && \
-    rm -rf /googletest
-
 WORKDIR /code
+
+# make the container stay running.
+CMD ["tail", "-f", "/dev/null"]
