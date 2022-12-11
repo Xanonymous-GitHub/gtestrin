@@ -1,0 +1,27 @@
+name: Docker Image CI
+
+on:
+  schedule:
+    - cron: '45 17 * * *'
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - name: Log into registry ${{ env.REGISTRY }}
+      uses: docker/login-action@master
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: sh ./distribute.sh
