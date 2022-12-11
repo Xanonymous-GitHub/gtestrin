@@ -12,6 +12,8 @@
 
 2. Follow these steps to open folder inside container using vscode.
 
+- https://code.visualstudio.com/docs/devcontainers/containers
+
 ## How to build
 
 ```shell
