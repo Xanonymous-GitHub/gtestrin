@@ -18,7 +18,7 @@ RUN apk update && \
     apk --no-cache add build-base valgrind gtest gtest-dev clang lldb llvm gdb cmake make && \
     apk upgrade
 
-WORKDIR /code
+WORKDIR /workspaces
 
 # move to zsh.
 SHELL ["/bin/zsh"]
