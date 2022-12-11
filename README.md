@@ -4,13 +4,15 @@
 
 ## How to use
 
-1. Prepare a running container.
+1. Add file into your project root: `.devcontainer/devcontainer.json`
+    - https://github.com/Xanonymous-GitHub/gtestrin/blob/main/devcontainer.json
+2. Install
+   the [`Dev containers`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+   extension in vscode.
+3. Click the green button in the lower right corner of vscode and select `open folder in Container...`
+4. Find your project folder and open it. Please note that this folder is the project folder of step 1!
 
-    ```shell
-    docker run -d --pull always xanonymous/gtest-cpp-essential-env
-    ```
-
-2. Follow these steps to open folder inside container using vscode.
+#### More details
 
 - https://code.visualstudio.com/docs/devcontainers/containers
 
