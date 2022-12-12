@@ -9,7 +9,8 @@
 2. Install
    the [`Dev containers`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
    extension in vscode.
-3. Click the green button in the lower right corner of vscode and select `open folder in Container...`
+3. Click the green button in the lower left corner of vscode and select `open folder in Container...`
+<img width="240" src="https://user-images.githubusercontent.com/47718989/207089713-6eaed87e-21a6-4f48-b78c-efc537d9ea87.png">
 4. Find your project folder and open it. Please note that this folder is the project folder of step 1!
 
 #### More details
