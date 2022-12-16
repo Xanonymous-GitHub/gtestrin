@@ -33,14 +33,15 @@
         "danielpinto8zz6.c-cpp-project-generator",
         "LeoJhonSong.ccpp-extension-pack",
         "davidbroetje.algorithm-mnemonics-vscode",
-        "SeyyedKhandon.qpack",
         "Shan.code-settings-sync",
         "vscodevim.vim",
         "wayou.vscode-todo-highlight",
         "Gruntfuggly.todo-tree",
         "vscode-icons-team.vscode-icons",
         "chrmarti.regex",
-        "jeff-hykin.better-cpp-syntax"
+        "jeff-hykin.better-cpp-syntax",
+        "GitHub.github-vscode-theme",
+        "streetsidesoftware.code-spell-checker"
       ]
     }
   },
