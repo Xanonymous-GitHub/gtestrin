@@ -16,6 +16,7 @@
         "streetsidesoftware.code-spell-checker",
         "GitHub.remotehub",
         "eamodio.gitlens",
+        "donjayamanne.githistory",
         "VisualStudioExptTeam.vscodeintellicode",
         "PKief.material-icon-theme",
         "ms-vscode-remote.remote-ssh",
@@ -24,10 +25,30 @@
         "ms-vscode.remote-explorer",
         "ms-vscode.remote-repositories",
         "ms-vscode-remote.remote-wsl",
-        "DavidAnson.vscode-markdownlint"
+        "DavidAnson.vscode-markdownlint",
+        "jeff-hykin.better-cpp-syntax",
+        "aaron-bond.better-comments",
+        "GitHub.copilot",
+        "GitHub.codespaces",
+        "GitHub.vscode-pull-request-github",
+        "danielpinto8zz6.c-cpp-compile-run",
+        "danielpinto8zz6.c-cpp-project-generator",
+        "LeoJhonSong.ccpp-extension-pack",
+        "davidbroetje.algorithm-mnemonics-vscode",
+        "SeyyedKhandon.qpack",
+        "Shan.code-settings-sync",
+        "vscodevim.vim",
+        "asvetliakov.vscode-neovim",
+        "wayou.vscode-todo-highlight",
+        "Gruntfuggly.todo-tree",
+        "vscode-icons-team.vscode-icons",
+        "chrmarti.regex",
+        "alefragnani.Bookmarks"
       ]
     }
   },
   "postCreateCommand": "g++ -v",
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "capAdd": ["SYS_PTRACE"],
+  "securityOpt": ["seccomp=unconfined"]
 }
