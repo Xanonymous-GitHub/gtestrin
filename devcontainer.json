@@ -26,9 +26,7 @@
         "ms-vscode.remote-repositories",
         "ms-vscode-remote.remote-wsl",
         "DavidAnson.vscode-markdownlint",
-        "jeff-hykin.better-cpp-syntax",
         "aaron-bond.better-comments",
-        "GitHub.copilot",
         "GitHub.codespaces",
         "GitHub.vscode-pull-request-github",
         "danielpinto8zz6.c-cpp-compile-run",
@@ -38,12 +36,11 @@
         "SeyyedKhandon.qpack",
         "Shan.code-settings-sync",
         "vscodevim.vim",
-        "asvetliakov.vscode-neovim",
         "wayou.vscode-todo-highlight",
         "Gruntfuggly.todo-tree",
         "vscode-icons-team.vscode-icons",
         "chrmarti.regex",
-        "alefragnani.Bookmarks"
+        "jeff-hykin.better-cpp-syntax"
       ]
     }
   },
