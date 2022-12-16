@@ -73,6 +73,7 @@ if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
     curl \
     wget \
     rsync \
+    bash \
     ca-certificates \
     unzip \
     zip \
