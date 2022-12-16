@@ -62,6 +62,7 @@ fi
 if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
   apk update
   apk add --no-cache \
+    build-base \
     openssh-client \
     gnupg \
     procps \
@@ -95,7 +96,19 @@ if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
     which \
     ncdu \
     shadow \
-    strace
+    strace \
+    cmake \
+    make \
+    ninja \
+    clang \
+    lldb \
+    llvm \
+    bash-completion \
+    git-bash-completion \
+    cmake-bash-completion \
+    zsh-completions \
+    gcc-zsh-completion \
+    git-zsh-completion
 
   # Install man pages - package name varies between 3.12 and earlier versions
   if apk info man >/dev/null 2>&1; then
