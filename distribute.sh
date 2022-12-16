@@ -6,9 +6,15 @@ function gen_hash() {
 
 IMAGE_NAME=xanonymous/gtest-cpp-essential-env
 
-docker builder prune -f -a
-docker build --pull \
-  -t $IMAGE_NAME \
-  -t $IMAGE_NAME:"$(gen_hash)" \
-  . &&
-  docker push $IMAGE_NAME --all-tags
+# create a temporary builder
+docker buildx create --name tmp_getstrin_builder --use
+
+# build the image.
+docker buildx build \
+  --platform linux/amd64,linux/arm64,linux/arm/v7 \
+  -t ${IMAGE_NAME}:latest \
+  -t ${IMAGE_NAME}:"$(gen_hash)" \
+  --push .
+
+# remove the temporary builder
+docker buildx rm tmp_getstrin_builder -f
