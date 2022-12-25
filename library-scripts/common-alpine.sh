@@ -102,7 +102,7 @@ if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
     make \
     ninja \
     clang \
-    clangd \
+    clang-extra-tools \
     lldb \
     llvm \
     bash-completion \
