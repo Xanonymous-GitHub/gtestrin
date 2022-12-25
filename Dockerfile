@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # For Xanonymous's AUN policy, we should always use the latest stable major version here.
-ARG VARIANT=3
+ARG VARIANT=edge
 FROM alpine:${VARIANT} AS base
 
 # [Option] Install zsh
