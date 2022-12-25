@@ -16,8 +16,6 @@ docker pull --all-tags $IMAGE_NAME
 
 # build the image.
 docker buildx build \
-  --platform \
-  linux/amd64,linux/arm64,linux/arm/v7 \
   -t ${IMAGE_NAME}:latest \
   -t ${IMAGE_NAME}:"$(gen_hash)" \
   --push .
